@@ -33,32 +33,35 @@ body {
 .fields {
     display: grid;
     gap: 8px;
-    width: 90%;
+    width: 80%;
 }
 
 .field-wrapper {
-    padding: 15px;
+    padding: 5px;
     background-color: #09090B;
     border: 1px solid #3F3F46;
     border-radius: 8px;
     display: flex;
     align-items: center;
     gap: 10px;
+    text-align: center;
 }
 
 .field-wrapper img {
     max-width: 30px;
     margin: 8px;
+    margin-left: 15px
 }
 
 .field-wrapper span {
     color: #ccc;
-    text-align: left;
+    /* text-align: left; */
     flex: 1;
 }
 
 button{
     font-family: 'Inter', sans-serif;
+    margin-top: 15px;
     width: 25%;
     text-align: center;
     border: none;
@@ -89,6 +92,7 @@ button:hover {
     color: yellowgreen;
     
 }
+
 
 
 @media (max-width: 600px) {
