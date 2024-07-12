@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/pt-br.js"></script>
+    <script>
+      dayjs.locale("pt-br");
+    </script>
+    <title>Planner</title>
+  </head>
+  <body>
+    <div id="app">
+      <form onsubmit="salvarAtividade(event)">
+
+        <div id="place" class="card-bg">
+            <img src="../../icons/map-pin.svg" alt="">
+            Belo Horizonte, MG
+        </div>
+    <div class="fields">      
+         <div class="field-wrapper">
+            <img src="../../icons/tag.svg" alt="">
+          <input
+            type="text"
+            placeholder="Qual é a atividade?"
+            name="atividade"
+            required
+          />
+        </div>
+
+        <div class="field-wrapper">
+            <img src="../../icons/calendar.svg" alt="">
+          <select name="dia" id="">
+            <option value="2024-07-09">09 de julho</option>
+          </select>
+        </div>
+
+        <div class="field-wrapper">
+            <img src="../../icons/clock.svg" alt="">
+          <select name="hora" id="">
+            <option value="10:30">10:30</option>
+          </select>
+        </div>
+
+    </div>
+
+        <button>Salvar Atividade</button>
+      </form>
+
+      <main>
+        <h1>Atividades</h1>
+        <section></section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
